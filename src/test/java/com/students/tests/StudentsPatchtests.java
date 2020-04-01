@@ -1,7 +1,7 @@
 
 package com.students.tests;
 
-import static org.hamcrest.Matchers.*;
+
 
 import java.util.ArrayList;
 
@@ -15,7 +15,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
-
+import static org.hamcrest.Matchers.*;
 public class StudentsPatchtests {
 
 
