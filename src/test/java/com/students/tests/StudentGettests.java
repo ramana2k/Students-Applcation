@@ -5,19 +5,14 @@ import static org.hamcrest.Matchers.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.student.base.TestBase;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
 
-public class StudentGettests {
-	
-	@BeforeClass
-	public static void init()
-	{
-		
-		RestAssured.baseURI="http://localhost:8899/student";
-	}
+public class StudentGettests extends TestBase{
 	
 	@Test
 	public void getStuentsdetails()
@@ -30,21 +25,21 @@ public class StudentGettests {
 		
 	}
 	
-	@Test
+/*	@Test
 	public void getStudentInfo()
 	{
 		Response res= given()
 		.when()
-		.get("/1");
+		.get("/100");
 		
 		System.out.println(res.body().prettyPrint());
 		
 		given()
 		.when()
-		.get("/1")
+		.get("/100")
 		.then()
 		.statusCode(200);
 		
 	}
-
+*/
 }
