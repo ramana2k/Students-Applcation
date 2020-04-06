@@ -21,7 +21,8 @@ public class StudentGettests extends TestBase{
       .when()
       .get("/list");
     System.out.println(res.body().prettyPrint());
-		
+    System.out.println(res.body().prettyPrint());
+
 		
 	}
 	
