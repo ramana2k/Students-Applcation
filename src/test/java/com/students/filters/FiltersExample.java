@@ -13,6 +13,8 @@ import io.restassured.filter.log.ErrorLoggingFilter;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 
+/* done the class till section11. start from section 12 */
+
 public class FiltersExample {
 
 	public static StringWriter requestWriter;
@@ -58,7 +60,7 @@ public class FiltersExample {
 		.filter(new ResponseLoggingFilter(responseCapture))
 		.when()
 		.get("/list");
-		System.err.println(requestWriter.toString());
+		//System.err.println(requestWriter.toString());
 		System.err.println(responseWriter.toString());
 		
 		
@@ -67,7 +69,7 @@ public class FiltersExample {
 		.filter(new ErrorLoggingFilter(errorCapture))
 		.when()
 		.get("/listqqq");
-		System.err.println(errorWriter.toString().toUpperCase());
+		//System.err.println(errorWriter.toString().toUpperCase());
 
 
 	}
