@@ -15,6 +15,8 @@ import io.restassured.filter.log.ResponseLoggingFilter;
 
 /* done the class till section11. start from section 12 */
 
+/*java -jar rest.jar --server.port=8899*/
+
 public class FiltersExample {
 
 	public static StringWriter requestWriter;
@@ -29,7 +31,7 @@ public class FiltersExample {
 
 	@BeforeClass
 	public static void init() {
-		RestAssured.baseURI = "http://localhost:8080";
+		RestAssured.baseURI = "http://localhost:8899";
 		RestAssured.basePath = "/student";
 	}
 
