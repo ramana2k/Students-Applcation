@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.student.base.TestBase;
 import com.student.model.Student;
 
 import io.restassured.RestAssured;
@@ -16,7 +17,7 @@ import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
 
 
-public class StudentsPuttests {
+public class StudentsPuttests extends TestBase{
 
 
 	@Test
